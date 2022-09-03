@@ -1,0 +1,108 @@
+:root {
+    --teste-: red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #080808;
+}
+
+main {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.content {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.content img {
+    width: 40rem;
+    /* padding: 10rem; */
+    /* height: 40rem; */
+
+    clip-path: circle();
+    /* border-radius: 50%; */
+    /* background-color: red; */
+
+    /* border: 1rem cyan solid; */
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin-top: 2rem;
+}
+
+.btn {
+    font-size: 2.5rem;
+    /* padding: 1.5rem 8rem 1.5rem 8rem; */
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    padding-right: 6.6rem;
+    padding-left: 5.4rem;
+    color: cyan;
+
+    border: 1rem cyan solid;
+    border-radius: 5rem;
+
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: cyan;
+    color: black;
+    border-color: rgba(1, 1, 1, 0.2);
+}
+
+
+@media only screen and (max-width: 550px) {
+    .btn {
+        font-size: 2rem;
+    }
+
+    .content img {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+
+@media only screen and (max-width: 350) {
+
+    .content img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        padding-right: 3.3rem;
+        padding-left: 3.2rem;
+
+        background-color: red;
+
+    }
+
+}

@@ -1,5 +1,5 @@
 :root {
-    --teste-: red;
+    --cor-primaria: #00CED1;
 }
 
 * {
@@ -14,10 +14,11 @@ html {
 body {
     background-color: #080808;
 }
+/* --------------------------------------- */
 
 main {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 5rem; /* Espaçamento */
+    padding-bottom: 5rem; /* Espaçamento */
 }
 
 .content {
@@ -25,7 +26,6 @@ main {
 
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 2rem;
 
@@ -37,7 +37,7 @@ main {
 
     border-radius: 50%;
 
-    border: 1rem cyan solid;
+    border: 1rem var(--cor-primaria) solid;
 }
 
 
@@ -51,23 +51,24 @@ main {
 
 .btn {
     font-size: 2.5rem;
+    min-width: 24rem;
 
     padding-top: 2.2rem;
     padding-bottom: 2.2rem;
     padding-right: 6.6rem;
     padding-left: 5.4rem;
-    color: cyan;
+    color: var(--cor-primaria);
 
-    border: 1rem cyan solid;
+    border: 1rem var(--cor-primaria) solid;
     border-radius: 5rem;
 
     text-align: center;
 }
 
 .btn:hover {
-    background-color: cyan;
+    background-color: var(--cor-primaria);
     color: black;
-    border-color: rgba(1, 1, 1, 0.2);
+    border-color: rgba(1, 1, 1, 0.3);
 }
 
 
@@ -76,6 +77,7 @@ main {
 @media screen and (max-width: 700px) {
     .btn {
         font-size: 2rem;
+        min-width: 15rem;
     }
 
     .content img {
